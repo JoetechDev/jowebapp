@@ -52,7 +52,7 @@ jobs:
         git config user.email jeaggrey.com
         git config user.name jeaggrey
         git switch main
-        sed -i 's+jeaggrey/joetech.*+jeaggrey/joetech:${{github.run_number}}+g' Deployment.yaml"
-        sh "git add ."      
-        sh "git commit -m 'Done by Github Action changemanifest:${{github.run_number}}        
-        sh "git push https://${{GIT_USERNAME}}:${{GIT_PASSWORD}}@github.com/JoetechDev/Manifests.git main" 
+        sed -i 's+jeaggrey/joetech.*+jeaggrey/joetech:${{github.run_number}}+g' Deployment.yaml
+        git add .      
+        git commit -m 'Done by Github Action changemanifest:${{github.run_number}}        
+        git push https://${{GIT_USERNAME}}:${{GIT_PASSWORD}}@github.com/JoetechDev/Manifests.git main 
