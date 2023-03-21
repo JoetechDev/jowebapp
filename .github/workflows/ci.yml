@@ -50,7 +50,7 @@ jobs:
       uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{ secrets.GIT_TOKEN}}
-        repository: JoetechDev/Manifest  #${{ github.actor }}/argocd-node-app-config
+        repository: JoetechDev/ManifestS  #${{ github.actor }}/argocd-node-app-config
         event-type: new-image
         client-payload: '{"image": "jeaggrey/webapp:${{ github.run_number }}"}'
 
