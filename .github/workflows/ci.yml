@@ -46,13 +46,34 @@ jobs:
           context: .
           push: true
           tags: jeaggrey/webapp:${{github.run_number}}
-    - name: update manifest file 
+
+
+    - name: Check out my other private repo
+      uses: actions/checkout@master
+      with:
+          repository: JoetechDev/Manifests
+          token: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: update manifest file     
       run: |
-        git clone https://github.com/JoetechDev/Manifests.git
-        git config --global user.name jeaggrey
-        git config --global user.email jeaggrey.com
-        cat Manifests/deployment.yaml
-        # git switch main
+        git config --global user.name jeaggrey     
+
+    # - name: update manifest file
+    #   uses: actions/checkout@master
+    #   with:
+    #       repository: JoetechDev/Manifests
+    #       # token: ${{ secrets.my_pat }}    
+      
+
+
+
+
+
+      # run: |
+      #   git clone https://github.com/JoetechDev/Manifests.git
+      #   git config --global user.name jeaggrey
+      #   git config --global user.email jeaggrey.com
+      #   cat Manifests/deployment.yaml
+      #   # git switch main
         
 
 
