@@ -46,6 +46,13 @@ jobs:
           context: .
           push: true
           tags: jeaggrey/webapp:${{github.run_number}}
+    - name: Repository Dispatch
+      uses: peter-evans/repository-dispatch@v1
+      with:
+        token: ${{ secrets.DOCKERHUB_TOKEN }}
+        repository: joetechDev/Manifest  #${{ github.actor }}/argocd-node-app-config
+        event-type: new-image
+        client-payload: '{"image": "jeaggrey/webapp:${{ github.run_number }}"}'
 
 
     # - name: Check out my other private repo
