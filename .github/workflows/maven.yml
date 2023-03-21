@@ -55,4 +55,4 @@ jobs:
         sed -i 's+jeaggrey/joetech.*+jeaggrey/joetech:${{github.run_number}}+g' Deployment.yaml"
         sh "git add ."      
         sh "git commit -m 'Done by Github Action changemanifest:${{github.run_number}}        
-        sh "git push https://${{GIT_USERNAME}}:${{GIT_PASSWORD}}@github.com/JoetechDev/Manifests.git main" 
+        sh "git push https://user:${{GITHUB_TOKEN}}@github.com/JoetechDev/Manifests.git main" 
