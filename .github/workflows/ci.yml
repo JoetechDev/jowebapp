@@ -56,7 +56,7 @@ jobs:
     - name: update manifest file     
       run: |
         git config --global user.name jeaggrey  
-        cat Manifests/deployment.yaml   
+        cat deployment.yaml   
 
     # - name: update manifest file
     #   uses: actions/checkout@master
