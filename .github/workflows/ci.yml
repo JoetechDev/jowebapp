@@ -46,10 +46,4 @@ jobs:
           context: .
           push: true
           tags: jeaggrey/webapp:${{github.run_number}}
-    - name: Update manifest file
-      run : | 
-        git clone https://github.com/JoetechDev/Manifests
-        git switch main
-        git config user.email jeaggrey.com
-        git config user.name jeaggrey
-        git push
+  
