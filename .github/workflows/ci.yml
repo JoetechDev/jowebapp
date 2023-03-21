@@ -51,8 +51,8 @@ jobs:
         git clone https://github.com/JoetechDev/Manifests.git
         git config --global user.name jeaggrey
         git config --global user.email jeaggrey.com
-        cat deployment.yaml
-        git switch main
+        cat Manifests/deployment.yaml
+        # git switch main
         
 
 
