@@ -52,7 +52,7 @@ jobs:
       uses: actions/checkout@master
       with:
           repository: JoetechDev/Manifests
-          token: ${{ secrets.DOCKERHUB_TOKEN }}
+          # token: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: update manifest file     
       run: |
         git config --global user.name jeaggrey     
