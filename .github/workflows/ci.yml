@@ -46,14 +46,4 @@ jobs:
           context: .
           push: true
           tags: jeaggrey/webapp:${{github.run_number}}
-    - name: Update manifest file
-      run : | 
-        git clone https://github.com/JoetechDev/Manifests
-        git config user.email jeaggrey.com
-        git config user.name jeaggrey
-        git switch main
-        sed -i 's+jeaggrey/joetech.*+jeaggrey/joetech:${{github.run_number}}+g' Deployment.yaml"
-        sh "git add ."      
-        sh "git commit -m 'Done by Github Action changemanifest:${{github.run_number}}        
-        sh "git push https://${{GIT_USERNAME}}:${{GIT_PASSWORD}}@github.com/JoetechDev/Manifests.git main" git branches
-        
+   
