@@ -7,19 +7,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Joseph Aggrey - Home Page</title>
-	
+
 	<!-- <link href="images/devops.png" rel="icon"> -->
 </head>
 </head>
 <body>
 <h1 align="center" >Welcome to Joseph's DevOPs Project </h1>
-<h1 align="center"> Joetech CI/CD Project  </h1>
+<h1 align="center"> Joetech CI/CD Projects  </h1>
 	<h1 align="center" style="color:red" >I have sucessfully used Jenkins to integrate Maven,Sonarqube,Nexus,Tomcat , Docker & K8SS </h1>
 	<h1 align="center" style="color:red" >This Project uses ArgoCD as a GitOps Tool  </h1>
-		
- <div style="text-align: center;"><img src="images/jenkins.png" width="850" alt="My Image"  /></div> 
+
+ <div style="text-align: center;"><img src="images/jenkins.png" width="850" alt="My Image"  /></div>
 	<!--	<span align: "center"><img src="images/jenkins.png" width="850" alt="My Image"  /></span> -->
-	
+
 		<head>
 <style>
 * {
@@ -42,7 +42,7 @@
 </head>
 <body>
 <span>
-	
+
 	<div class="row">
   <div class="column">
     <img src="images/kindpng_1280357.png" alt="github" style="width:100%">
@@ -69,10 +69,10 @@
   </div>
 </div>
 
-</body>	
+</body>
 </span>
-<body>	
-<span>	
+<body>
+<span>
 <div class="column">
    <img src="images/k8.png" alt="kubernettes" style="width:100%">
 	</div>
@@ -84,38 +84,38 @@
 <img src="images/argoCD.png" alt="argoCD" style="width:100%">
 </div>
 </span>
-</body>	
+</body>
 
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
 
-<% 
+<%
 String ip = "";
 InetAddress inetAddress = InetAddress.getLocalHost();
 ip = inetAddress.getHostAddress();
-out.println("Server Host Name :: "+inetAddress.getHostName()); 
+out.println("Server Host Name :: "+inetAddress.getHostName());
 %>
 <br>
 <%out.println("Server IP Address :: "+ip);%>
-		
+
 </h1>
-	
+
 <hr>
 <div style="text-align: center;">
 	<span>
-		
+
 	<!--	<img src="images/devops.png" alt="" width="850"> -->
 <br>
-<br>		
+<br>
 <br>
 <br>
 		<br>
-<br>		
+<br>
 
 	<span style="font-weight: bold;">
-		<h1 align="center" > Joseph's Technology </h1> 
-		<h1 align="center" > Woodstock , Ontario </h1> 
+		<h1 align="center" > Joseph's Technology </h1>
+		<h1 align="center" > Woodstock , Ontario </h1>
 		<h1 align="center" >    Canada </h1>
 		<!-- <h2> joey.grey@yahoo.com </h2> -->
 		<br>
@@ -197,17 +197,17 @@ html {
     </div>
   </div>
 
-  
+
     </div>
   </div>
-  
-  
+
+
     </div>
   </div>
 </div>
 
 </body>
-		
+
 	</span>
 </div>
 <hr>

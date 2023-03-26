@@ -10,13 +10,13 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "test" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "test" ]
+    branches: [ "main" ]
 permissions:
   pull-requests: write
   issues: write
-  repository-projects: write    
+  repository-projects: write
   contents: write
 
 jobs:
@@ -44,7 +44,7 @@ jobs:
       with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      
+
     - name: Build and push
       uses: docker/build-push-action@v4
       with:
@@ -66,17 +66,17 @@ jobs:
     #       repository: JoetechDev/Manifests
     #       # token: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    # - name: update manifest file     
+    # - name: update manifest file
     #   run: |
-    #     git config --global user.name jeaggrey  
-    #     cat deployment.yaml   
+    #     git config --global user.name jeaggrey
+    #     cat deployment.yaml
 
     # - name: update manifest file
     #   uses: actions/checkout@master
     #   with:
     #       repository: JoetechDev/Manifests
-    #       # token: ${{ secrets.my_pat }}    
-      
+    #       # token: ${{ secrets.my_pat }}
+
 
 
 
@@ -88,7 +88,6 @@ jobs:
       #   git config --global user.email jeaggrey.com
       #   cat Manifests/deployment.yaml
       #   # git switch main
-        
 
 
-   
+
